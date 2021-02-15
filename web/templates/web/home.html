@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style type="text/css">
+    #myID {
+      text-decoration: none;
+    }
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+    <ul>
+      <a href="#" style="background:#f19800;"><i class="ion-ios-home"></i></a>
+      <a href="#"><i class="ion-heart"></i></a>
+      <a href="#"><i class="ion-search"></i></a>
+    </ul>
+    <div class="web">
+      {% for web in web %}
+      <h1 dir="rtl" aligh="right" ><a id="myID" href= "{% url 'web:detail' slug=web.slug %}"><font color="black"><tt>{{web.title}}</tt></font></a></h1>
+      <hr/ color=blue>
+      <p  dir="rtl" aligh="right">{{web.date}}</p>
+      <hr/>
+      {% endfor%}
+      <br>
+    <h3 ><a id="myID" href="#"><tt> لیست کامل</tt></a></h3>
+
+      <hr>
+      <p  dir="rtl" aligh="right">:) امیدوارم  از این قسمت ها هم خوشتون بیاد.</p>
+      <h3 dir="rtl" aligh="right"><a id="myID" href="#"><tt> حمایت مالی</tt></a></h3>
+      <h3 dir="rtl" aligh="right"><a id="myID" href="http://google/aparat.com"><tt>اپارات</tt></a></h3>
+      <h3 dir="rtl" aligh="right"><a id="myID" href="#"><tt> تلگرام</tt></a></h3>
+      <h3 dir="rtl" aligh="right"><a id="myID" href="#"><tt>یوتیوب</tt></a></h3>
+      <h3 dir="rtl" aligh="right"><a id="myID" href="#"><tt>اینستاگرام</tt></a></h3>
+      <br>
+      <hr>
+      <br>
+      <h4  dir="rtl" aligh="right">پروژه ها</h4>
+      <hr/ size=3 color=blue>
+      <h4 dir="rtl" aligh="right"><a id="myID" href="">riuyrifis<a></h4>
+      <hr>
+      <br>
+      <h4 dir="rtl" aligh="right" >برچسب ها</h4>
+      <hr/ color=blue size=3>
+      <hr/ color=blue size=3>
+      <br>
+    </div>
+
+  </body>
+</html>
